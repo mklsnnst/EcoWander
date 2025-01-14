@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ЭКО ТУРИЗМ</title>
+    <meta charset="UTF-8">
+    <link href="./css/mainF.css" rel="stylesheet" /> <!-- Подключение CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo2">Вернуться на главную страницу</a>
+    </header>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset id="linf">
+            <legend>Личная информация</legend>
+            <label>Имя<input type="text" name='name' required placeholder="Имя"></label>
+            <label>Дата Рождения<input type="date" name="data" placeholder="dd.mm.yyyy"></label>
+            <h5>Выберите пол</h5>
+            <div>
+                <label>Женский<input type='radio' name='pol' value='Женский'></label>
+                <label>Мужской<input type='radio' name='pol' value='Мужской'></label>
+            </div>
+            <label>Пароль<input type='password' name='parol' required></label>
+        </fieldset>
+        <fieldset id="kinf">
+            <legend>Контактная информация</legend>
+            <label>Почта<input type="email" name='pochta' required placeholder="pochta@gmail.com"></label>
+            <label>Номер телефона<input type="tel" name='telefon' placeholder="89999999999"></label>
+            <h5>Выберите время для получения обратной связи</h5>
+            <div>
+                <label>Утро<input type="checkbox" name="time" value="utro"></label>
+                <label>День<input type="checkbox" name="time" value="tag"></label>
+                <label>Вечер<input type="checkbox" name="time" value="vecher"></label>
+            </div>
+        </fieldset>
+        <button id="send">Отправить</button>
+    </form>
+    <footer>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Email: EcoWander@mail.ru</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+        </section>
+        <p>&copy; 2025 EcoWander</p>
+    </footer>
+</body>
+</html>

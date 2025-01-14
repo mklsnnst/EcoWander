@@ -1,0 +1,135 @@
+/* Основные стили для страницы */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../images/v8_2.png');
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(76, 175, 80, 0.8);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  color: white;
+}
+
+form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+form legend {
+  color: white;
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="password"],
+form input[type="email"],
+form input[type="tel"] {
+  width: calc(100% - 22px); /* Учитываем padding и border */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form button#send {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button#send:hover {
+  background-color: #45a049;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 20px; /* Отступы внутри футера */
+  width: 100%;
+  background-color: transparent; /* Убираем фон футера */
+  color: white; /* Белый цвет текста */
+  border-radius: 5px; /* Закругление углов */
+}
+/* Анимация для кнопки */
+@keyframes buttonClick {
+  0% {
+    background-color: #4CAF50; /* Начальный цвет */
+  }
+  50% {
+    background-color: #3d8140; /* Промежуточный цвет */
+    transform: scale(0.95); /* Лёгкое уменьшение размера */
+  }
+  100% {
+    background-color: #4CAF50; /* Возврат к начальному цвету */
+  }
+}
+
+/* Применяем анимацию при нажатии */
+button#send:active {
+  animation: buttonClick 0.3s ease;
+}
