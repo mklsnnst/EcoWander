@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-image: url('../images/v8_2.png'); /* Парк Лога*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header {
+  background-color: rgba(76, 175, 80, 0.8); /* Полупрозрачный фон для заголовка */
+  color: white;
+  text-align: center;
+  padding: 0.01em 0;
+  top: 0
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-decoration: none;
+  color: white; /* текст в footer */ /* Полупрозрачный фон для всего футера */
+  padding: 20px; /* Отступы внутри футера */
+  border-radius: 5px; /* Закругление углов */
+  text-align: center; /* Центрируем текст */
+}
+
+/* Убираем фон у всех секций внутри футера */
+footer section {
+  background-color: transparent; /* Прозрачный фон */
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+}

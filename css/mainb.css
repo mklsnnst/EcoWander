@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Минимальная высота равна высоте экрана */
+  font-family: 'Manrope', sans-serif;
+  background-image: url('../images/v8_2.png'); /* Путь к изображению */
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Без повторения изображения */
+  background-attachment: fixed; /* Фон закреплён и не прокручивается */
+  color: white; /* Белый цвет текста для всей страницы */
+}
+header {
+  background-color: rgba(76, 175, 80, 0.8); /* Полупрозрачный фон для заголовка */
+  color: white;
+  text-align: center;
+  padding: 0.01em 0;
+  top: 0
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-decoration: none;
+  color: white; /* текст в footer */ /* Полупрозрачный фон для всего футера */
+  padding: 20px; /* Отступы внутри футера */
+  border-radius: 5px; /* Закругление углов */
+  text-align: center; /* Центрируем текст */
+}
+
+/* Убираем фон у всех секций внутри футера */
+footer section {
+  background-color: transparent; /* Прозрачный фон */
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+}
