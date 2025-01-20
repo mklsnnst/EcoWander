@@ -106,32 +106,30 @@ section {
     background-color: #45a049; 
 }
 
-/* Медиазапросы для адаптации */
-
 @media (max-width: 768px) {
     nav ul li {
-        display: block; /* Изменяем на блочный элемент для мобильных */
-        margin-bottom: 10px; /* Отступ между элементами */
+        display: block; 
+        margin-bottom: 10px;
     }
 
     .button-link {
-        width: calc(100% - 30px); /* Ширина кнопки на мобильных устройствах */
-        padding: 18px; /* Увеличиваем отступы для удобства на мобильных */
+        width: calc(100% - 30px); 
+        padding: 18px; 
     }
 
     section {
-        padding: 10px; /* Уменьшаем отступы в секциях */
+        padding: 10px; 
     }
 }
 
 @media (max-width: 480px) {
     header {
-        font-size: 1.2em; /* Уменьшаем размер шрифта в заголовке */
-        padding: .5em; /* Увеличиваем отступы для удобства */
+        font-size: 1.2em; 
+        padding: .5em; 
     }
 
     .destination-button {
-        padding: 8px; /* Уменьшаем отступы для кнопок */
-        font-size: .9em; /* Уменьшаем размер шрифта в кнопках */
+        padding: 8px; 
+        font-size: .9em; 
     }
 }
