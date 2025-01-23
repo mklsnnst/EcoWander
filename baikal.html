@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" />
-    <link href="./css/mainb.css" rel="stylesheet" /> <!-- Подключение CSS -->
+    <link href="./css/mainb.css" rel="stylesheet" /> 
     <title>"БАЙКАЛ"</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
     <header>
-        <h1>Байкал</h1>
-        <a href="index.html" id="logo2">Вернуться на главную страницу</a>
-    </header>
+	    <div class="header-content">
+        <a href="index.html"> 
+            <img src="./images/logo.png" alt="Логотип" class="logo">
+			</a>
+				<div class="header-text">
+					<h1>Экологический туризм</h1>
+					<p>Путешествуй с заботой о природе</p>
+				</div>
+        </div>
+	</header>
     <main>
         <section id="baikal">
             <h2>Экотур "Жемчужина Сибири: путешествие к сердцу Байкала"</h2>
             <figure class="image-wrapper">
-                <video class="baikal-image" controls>
+                <video class="baikal-image" controls poster="images/oblozhka.jpg">
                     <source src="images/baikal.mp4" type="video/mp4">
                     Ваш браузер не поддерживает тег video.
                 </video>

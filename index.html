@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" /> <!-- Подключение CSS -->
-    <title>"ЭКО ТУРИЗМ"</title>
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>"EcoWander-ЭкоТуризм"</title>
 </head>
 <body>
-        <header>
-        <h1>Экологический туризм</h1>
-        <p>Путешествуй с заботой о природе</p>
+    <!-- Ссылка для пропуска -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
+    <header>
+        <div class="header-content">
+            <img src="./images/logo.png" alt="Логотип EcoWander - Экологический туризм" class="logo">
+            <div class="header-text">
+                <h1>Экологический туризм</h1>
+                <p>Путешествуй с заботой о природе</p>
+            </div>
+        </div>
     </header>
+
     <nav>
         <ul>
             <li><a href="about.html">О компании</a></li>
@@ -20,9 +29,9 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="main-content">
         <section id="destinations">
-				<h2>Направления</h2>
+            <h2>Направления</h2>
             <div class="destination">
                 <h3>
                     <a href="baikal.html" class="button-link">Байкал</a>
@@ -49,7 +58,6 @@
                 </h3>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -60,6 +68,5 @@
         </section>
         <p>&copy; 2025 EcoWander</p>
     </footer>
-
-   </body>
+</body>
 </html>

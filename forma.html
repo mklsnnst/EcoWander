@@ -3,12 +3,20 @@
 <head>
     <title>ЭКО ТУРИЗМ</title>
     <meta charset="UTF-8">
-    <link href="./css/mainF.css" rel="stylesheet" /> <!-- Подключение CSS -->
+    <link href="./css/mainF.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo2">Вернуться на главную страницу</a>
+        <div class="header-content">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Логотип" class="logo">
+            </a>
+            <div class="header-text">
+                <h1>Экологический туризм</h1>
+                <p>Путешествуй с заботой о природе</p>
+            </div>
+        </div>
     </header>
     <form action="https://httpbin.org/post" method="post">
         <fieldset id="linf">
@@ -16,9 +24,9 @@
             <label>Имя<input type="text" name='name' required placeholder="Имя"></label>
             <label>Дата Рождения<input type="date" name="data" placeholder="dd.mm.yyyy"></label>
             <h5>Выберите пол</h5>
-            <div>
-                <label>Женский<input type='radio' name='pol' value='Женский'></label>
-                <label>Мужской<input type='radio' name='pol' value='Мужской'></label>
+            <div class="radio-group">
+                <label><input type='radio' name='pol' value='Женский'> Женский</label>
+                <label><input type='radio' name='pol' value='Мужской'> Мужской</label>
             </div>
             <label>Пароль<input type='password' name='parol' required></label>
         </fieldset>
